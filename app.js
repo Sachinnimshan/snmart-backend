@@ -7,21 +7,29 @@ import dotenv from 'dotenv';
 import OrderRouter from './Routes/OrderRouter.js';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import http from 'http';
 
 dotenv.config();
+
+
+
+
 
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 const PORT = process.env.PORT || 5000;
+const CONNECTION_URL = process.env.DB_URL;
 
-mongoose.connect(process.env.DB_URL,{
+const server = http.createServer(app);
+
+mongoose.connect(CONNECTION_URL,{
     useCreateIndex: true,
     useUnifiedTopology: true,
     useNewUrlParser: true
 })
-.then(()=> app.listen(PORT, ()=> {console.log(`Database Connected & Server Started @ http://localhost:${PORT}`)}))
+.then(()=> console.log(`Database Connected`))
 .catch((error)=> console.log(error));
 
 app.use('/api/users', UserRouter);
@@ -40,9 +48,14 @@ if(process.env.NODE_ENV === "production"){
     });
   }
 
-app.get('/', (req, res)=>{
-    res.send("Server is Ready"); 
+server.listen(PORT, ()=> console.log(`Server Started at ${PORT}`));
+
+app.get('/',(req,res)=>{
+  res.send("Server is Ready");
 });
+
+
+mongoose.set('useFindAndModify', false);
 
 
 
