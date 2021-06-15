@@ -5,6 +5,7 @@ import UserRouter from './Routes/UserRouter.js';
 import ProductRouter from './Routes/ProductRouter.js';
 import dotenv from 'dotenv';
 import OrderRouter from './Routes/OrderRouter.js';
+import emailRouter from './Routes/NewsLetter.js';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import http from 'http';
@@ -35,6 +36,7 @@ mongoose.connect(CONNECTION_URL,{
 app.use('/api/users', UserRouter);
 app.use('/api/products', ProductRouter);
 app.use('/api/orders', OrderRouter);
+app.use("/api/newsletter", emailRouter);
 
 app.get('/api/config/paypal', (req,res)=>{
     res.send(process.env.PAYPAL_CLIENT_ID || 'sb');
