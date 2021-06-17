@@ -29,7 +29,7 @@ const Data =
             AvailableSize: ['S','M','L'],
             Rating: 4.5,
             NumReviews: 20,
-            CountInStock: 0
+            CountInStock: 5
         },
         {
             //_id: 'q2',
@@ -41,7 +41,7 @@ const Data =
             AvailableSize: ['S','M','L'],
             Rating: 4.5,
             NumReviews: 20,
-            CountInStock: 0
+            CountInStock: 5
         },
         {
             //_id: 'q3',
@@ -89,7 +89,7 @@ const Data =
             AvailableSize: ['S','M','L'],
             Rating: 4.5,
             NumReviews: 20,
-            CountInStock: 0
+            CountInStock: 5
         },
         {
             //_id: 'q7',
@@ -113,7 +113,7 @@ const Data =
             AvailableSize: ['S','M','L'],
             Rating: 4.5,
             NumReviews: 20,
-            CountInStock: 0
+            CountInStock: 5
         },
         {
             //_id: 'q9',
@@ -125,7 +125,7 @@ const Data =
             AvailableSize: ['S','M','L'],
             Rating: 4.5,
             NumReviews: 20,
-            CountInStock: 7
+            CountInStock: 0
         },
         {
             //_id: 'q10',
@@ -137,7 +137,7 @@ const Data =
             AvailableSize: ['S','M','L'],
             Rating: 4.5,
             NumReviews: 20,
-            CountInStock: 0
+            CountInStock: 12
         },
         {
             //_id: 'q11',
@@ -149,7 +149,7 @@ const Data =
             AvailableSize: ['S','M','L'],
             Rating: 4.5,
             NumReviews: 20,
-            CountInStock: 0
+            CountInStock: 5
         },
         {
             //_id: 'q12',
@@ -161,7 +161,7 @@ const Data =
             AvailableSize: ['S','M','L'],
             Rating: 4.5,
             NumReviews: 20,
-            CountInStock: 2
+            CountInStock: 0
         }
     ]
     
