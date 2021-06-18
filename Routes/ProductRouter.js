@@ -9,7 +9,7 @@ const ProductRouter = express.Router();
 
 
 ProductRouter.get('/seed', expressAsyncHandler(async(req, res)=>{
-    await Product.remove({});
+    await Product.deleteMany({});
     const CreatedProducts = await Product.insertMany(Data.ProductData);
     res.send({CreatedProducts});
 }));
@@ -27,8 +27,6 @@ ProductRouter.get('/:id', expressAsyncHandler(async(req, res)=>{
         res.status(404).send({message: "Product Not Found"});
     }
 }));
-
-
 
 
 ProductRouter.post('/', IsAuth, expressAsyncHandler(async(req,res)=>{
