@@ -26,8 +26,6 @@ const CONNECTION_URL = process.env.DB_URL;
 const server = http.createServer(app);
 
 mongoose.connect(CONNECTION_URL,{
-    useCreateIndex: true,
-    useUnifiedTopology: true,
     useNewUrlParser: true
 })
 .then(()=> console.log(`Database Connected`))
@@ -57,7 +55,6 @@ app.get('/',(req,res)=>{
 });
 
 
-mongoose.set('useFindAndModify', false);
 
 
 
