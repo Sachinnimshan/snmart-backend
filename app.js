@@ -26,7 +26,9 @@ const CONNECTION_URL = process.env.DB_URL;
 const server = http.createServer(app);
 
 mongoose.connect(CONNECTION_URL,{
-    useNewUrlParser: true
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true
 })
 .then(()=> console.log(`Database Connected`))
 .catch((error)=> console.log(error));
