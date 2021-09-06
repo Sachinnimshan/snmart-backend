@@ -26,7 +26,7 @@ const Data =
             Description: 'A T-shirt, or tee shirt, is a style of fabric shirt named after the T shape of its body and sleeves. Traditionally, it has short sleeves and a round neckline, known as a crew neck, which lacks a collar. T-shirts are generally made of a stretchy, light and inexpensive fabric and are easy to clean.',
             Category: 'T-Shirt',
             Price: 2500,
-            AvailableSize: ['S','M','L'],
+            AvailableSize: ['S','L'],
             Rating: 1,
             NumReviews: 20,
             CountInStock: 5
@@ -38,7 +38,7 @@ const Data =
             Description: 'A T-shirt, or tee shirt, is a style of fabric shirt named after the T shape of its body and sleeves. Traditionally, it has short sleeves and a round neckline, known as a crew neck, which lacks a collar. T-shirts are generally made of a stretchy, light and inexpensive fabric and are easy to clean.',
             Category: 'T-Shirt',
             Price: 3500,
-            AvailableSize: ['S','M','L'],
+            AvailableSize: ['M','L'],
             Rating: 2.5,
             NumReviews: 20,
             CountInStock: 5
@@ -50,7 +50,7 @@ const Data =
             Description: 'A T-shirt, or tee shirt, is a style of fabric shirt named after the T shape of its body and sleeves. Traditionally, it has short sleeves and a round neckline, known as a crew neck, which lacks a collar. T-shirts are generally made of a stretchy, light and inexpensive fabric and are easy to clean.',
             Category: 'T-Shirt',
             Price: 3500,
-            AvailableSize: ['S','M','L'],
+            AvailableSize: ['S','M'],
             Rating: 5,
             NumReviews: 20,
             CountInStock: 1
@@ -62,7 +62,7 @@ const Data =
             Description: 'A T-shirt, or tee shirt, is a style of fabric shirt named after the T shape of its body and sleeves. Traditionally, it has short sleeves and a round neckline, known as a crew neck, which lacks a collar. T-shirts are generally made of a stretchy, light and inexpensive fabric and are easy to clean.',
             Category: 'T-Shirt',
             Price: 5500,
-            AvailableSize: ['S','M','L'],
+            AvailableSize: ['S'],
             Rating: 4.5,
             NumReviews: 20,
             CountInStock: 0
@@ -74,7 +74,7 @@ const Data =
             Description: 'A T-shirt, or tee shirt, is a style of fabric shirt named after the T shape of its body and sleeves. Traditionally, it has short sleeves and a round neckline, known as a crew neck, which lacks a collar. T-shirts are generally made of a stretchy, light and inexpensive fabric and are easy to clean.',
             Category: 'T-Shirt',
             Price: 7500,
-            AvailableSize: ['S','M','L'],
+            AvailableSize: ['M','L'],
             Rating: 3.5,
             NumReviews: 20,
             CountInStock: 5
