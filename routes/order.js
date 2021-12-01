@@ -1,7 +1,7 @@
 import express from 'express';
 import expressAsyncHandler from 'express-async-handler';
 import { GenerateToken, IsAuth } from '../utils.js';
-import Order from '../Models/OrderModel.js';
+import Order from '../Models/order.js';
 
 const OrderRouter = express.Router();
 

@@ -2,7 +2,7 @@ import express from 'express';
 import expressAsyncHandler from 'express-async-handler';
 import { GenerateToken, IsAuth  } from '../utils.js';
 import Data from '../Data.js';
-import User from '../Models/UserModel.js';
+import User from '../models/user.js';
 import bcrypt from 'bcryptjs';
 
 
