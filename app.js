@@ -1,5 +1,4 @@
 import express from 'express';
-// import Data from './Data.js';
 import mongoose from 'mongoose';
 import UserRouter from './routes/user.js';
 import ProductRouter from './routes/product.js';
@@ -11,9 +10,6 @@ import { fileURLToPath } from 'url';
 import http from 'http';
 
 dotenv.config();
-
-
-
 
 
 const app = express();
@@ -42,7 +38,7 @@ app.get('/api/config/paypal', (req,res)=>{
     res.send(process.env.PAYPAL_CLIENT_ID || 'sb');
 });
 
-if(process.env.NODE_ENV === "PROD"){
+if(process.env.ENV === "PROD"){
     const __dirname = path.dirname(fileURLToPath(import.meta.url));
     app.use(express.static(path.join(__dirname, 'build')));
     app.get('*', (req, res) => {
