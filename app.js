@@ -1,8 +1,8 @@
 import express from 'express';
 // import Data from './Data.js';
 import mongoose from 'mongoose';
-import UserRouter from './Routes/user.js';
-import ProductRouter from './Routes/product.js';
+import UserRouter from './routes/user.js';
+import ProductRouter from './routes/product.js';
 import dotenv from 'dotenv';
 import OrderRouter from './routes/order.js';
 import emailRouter from './routes/newletter.js';
