@@ -40,7 +40,7 @@ productRouter.post('/search', expressAsyncHandler(async(req,res)=>{
     try{
         const {searchQuery} = req.query;
         const title = new RegExp(searchQuery, 'i');
-        const products = await Product.find({title});
+        const products = await Product.find({Title: title});
         if(products){
             res.status(200);
             return res.json(products);
