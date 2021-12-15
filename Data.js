@@ -78,19 +78,8 @@ const Data =
             Rating: 3.5,
             NumReviews: 20,
             CountInStock: 5
-        },
-        {
-            //_id: 'q7',
-            Title: 'SL Cricket 2020 World Cup Jercey',
-            Image: '/Images/t1.jpg',
-            Description: 'A T-shirt, or tee shirt, is a style of fabric shirt named after the T shape of its body and sleeves. Traditionally, it has short sleeves and a round neckline, known as a crew neck, which lacks a collar. T-shirts are generally made of a stretchy, light and inexpensive fabric and are easy to clean.',
-            Category: 'T-Shirt',
-            Price: 9500,
-            AvailableSize: ['S','M','L'],
-            Rating: 1.5,
-            NumReviews: 20,
-            CountInStock: 10
         }
+       
     ]
     
 }
