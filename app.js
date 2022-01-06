@@ -38,7 +38,7 @@ app.get('/api/config/paypal', (req,res)=>{
     res.send(process.env.PAYPAL_CLIENT_ID || 'sb');
 });
 
-if(process.env.ENV === "PROD"){
+if(process.env.ENV === "DEV"){
     const __dirname = path.dirname(fileURLToPath(import.meta.url));
     app.use(express.static(path.join(__dirname, 'build')));
     app.get('*', (req, res) => {

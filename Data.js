@@ -78,6 +78,18 @@ const Data =
             Rating: 3.5,
             NumReviews: 20,
             CountInStock: 5
+        },
+        {
+            //_id: 'q5',
+            Title: 'Addidas T-Shirt 2022',
+            Image: '/Images/t6.png',
+            Description: 'A T-shirt, or tee shirt, is a style of fabric shirt named after the T shape of its body and sleeves. Traditionally, it has short sleeves and a round neckline, known as a crew neck, which lacks a collar. T-shirts are generally made of a stretchy, light and inexpensive fabric and are easy to clean.',
+            Category: 'T-Shirt',
+            Price: 5500,
+            AvailableSize: ['S','L'],
+            Rating: 3.5,
+            NumReviews: 20,
+            CountInStock: 5
         }
        
     ]
