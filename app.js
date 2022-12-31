@@ -38,13 +38,13 @@ app.get('/api/config/paypal', (req,res)=>{
     res.send(process.env.PAYPAL_CLIENT_ID || 'sb');
 });
 
-if(process.env.ENV === "PROD"){
-    const __dirname = path.dirname(fileURLToPath(import.meta.url));
-    app.use(express.static(path.join(__dirname, 'build')));
-    app.get('*', (req, res) => {
-      res.sendFile(path.join(__dirname, 'build', 'index.html'));
-    });
-  }
+// if(process.env.ENV === "PROD"){
+//     const __dirname = path.dirname(fileURLToPath(import.meta.url));
+//     app.use(express.static(path.join(__dirname, 'build')));
+//     app.get('*', (req, res) => {
+//       res.sendFile(path.join(__dirname, 'build', 'index.html'));
+//     });
+//   }
 
 server.listen(PORT, ()=> console.log(`Server Started at ${PORT}`));
 
